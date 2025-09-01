@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel Journey - Gallery</title>
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, #ffe6e6, #fff5cc); /* Background color changed */
+  color: #333;
+}
+header {
+  background: #222;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: orange;
+}
+.content {
+  padding: 40px;
+  text-align: center;
+  flex: 1;
+}
+.content h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.gallery img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  cursor: pointer;
+  animation: fadeIn 1s ease-in-out;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto; /* Footer always bottom */
+}
+  </style>
+</head>
+<body>
+<header>
+  <h1>Travel Journey</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="stories.html">Stories</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<main class="content">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="beach.jpg" alt="Travel 1">
+    <img src="camp.jpg" alt="Travel 2">
+    <img src="city.jpg" alt="Travel 3">
+    <img src="cliff.jpg" alt="Travel 4">
+    <img src="beach1.jpg" alt="Travel 5">
+    <img src="cultural.jpg" alt="Travel 6">
+    <img src="deserts.jpg" alt="Travel 7">
+    <img src="forest.jpg" alt="Travel 8">
+    <img src="historical.jpg" alt="Travel 9">
+    <img src="deserts1.jpg" alt="Travel 10">
+    <img src="forest1.jpg" alt="Travel 11">
+    <img src="island.jpg" alt="Travel 12">
+    <img src="lakes.jpg" alt="Travel 13">
+    <img src="flower.jpg" alt="Travel 14">
+    <img src="mountain.jpg" alt="Travel 15">
+    <img src="rainforest.jpg" alt="Travel 16">
+    <img src="river.jpeg" alt="Travel 17">
+    <img src="roads.jpg" alt="Travel 18">
+    <img src="sea.jpg" alt="Travel 19">
+    <img src="streets.jpg" alt="Travel 20">
+    <img src="sunset.jpeg" alt="Travel 21">
+    <img src="winter.jpg" alt="Travel 22">
+    <img src="wildlife.jpg" alt="Travel 23">
+    <img src="village.jpg" alt="Travel 24">
+    <img src="lakes1.jpg" alt="Travel 25">
+	 <img src="village1.jpg" alt="Travel 26">
+	  <img src="winter1.jpg" alt="Travel 27">
+	   <img src="temple.jpg" alt="Travel 28">
+	    <img src="island1.jpg" alt="Travel 29">
+		 <img src="mountain1.jpg" alt="Travel 30">	
+  </div>
+</main>
+<footer>
+  @ 2025 Travel Journey
+</footer>
+</body>
+</html>

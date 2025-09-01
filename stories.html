@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel Journey - Stories</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #ffe0b2, #fff8e1);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background: orange;
+      padding: 15px 30px;
+      position: relative;
+    }
+    header h1 {
+      text-align: center;
+      margin: 0;
+      font-size: 2em;
+      font-weight: bold;
+      color: white;
+    }
+    nav {
+      position: absolute;
+      right: 30px;
+      top: 20px;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    nav a:hover, nav a.active {
+      text-decoration: underline;
+    }
+    .stories {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px;
+      flex: 1;
+    }
+    .stories h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2em;
+      color: darkorange;
+    }
+    .story {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+      gap: 20px;
+    }
+    .story-img img {
+      width: 400px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    .story-text {
+      flex: 1;
+    }
+    .story-text h3 {
+      margin-bottom: 10px;
+      color: #222;
+    }
+    .story-text p {
+      line-height: 1.6;
+      color: #444;
+    }
+    .story:nth-child(even) .story-img {
+      order: 1;
+    }
+    @media (max-width: 768px) {
+      .story {
+        flex-direction: column;
+        text-align: center;
+      }
+      .story-img img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    footer {
+      background: orange;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Travel Journey</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="login.html">Login</a>
+    <a href="stories.html" class="active">Stories</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<main class="stories">
+    <h2>Explore Amazing Places</h2>
+  
+  <section class="story">
+    <div class="story-img"><img src="mountain1.jpg" alt="Mountain Adventure"></div>
+    <div class="story-text">
+      <h3>Mountain Adventure</h3>
+      <p>Experience the breathtaking views of the snow-capped mountains, trekking trails, and the fresh air of nature’s paradise.</p>
+    </div>
+  </section>
+
+  <section class="story">
+    <div class="story-img"><img src="beach1.jpg" alt="Beach Vibes"></div>
+    <div class="story-text">
+      <h3>Beach Vibes</h3>
+      <p>Relax on golden sands, swim in turquoise waters, and enjoy the magical sunsets at this stunning beach destination.</p>
+    </div>
+  </section>
+
+  <section class="story">
+    <div class="story-img"><img src="forest1.jpg" alt="Forest Escape"></div>
+    <div class="story-text">
+      <h3>Forest Escape</h3>
+      <p>Walk through dense forests, discover wildlife, and explore the hidden waterfalls deep inside nature’s lap.</p>
+    </div>
+  </section>
+
+  <section class="story">
+    <div class="story-img"><img src="city.jpg" alt="City Lights"></div>
+    <div class="story-text">
+      <h3>City Lights</h3>
+      <p>Explore vibrant nightlife, tall skyscrapers, and the never-ending energy of the modern city lifestyle.</p>
+    </div>
+  </section>
+
+  <section class="story">
+    <div class="story-img"><img src="deserts1.jpg" alt="Desert Safari"></div>
+    <div class="story-text">
+      <h3>Desert Safari</h3>
+      <p>Ride camels, enjoy dune bashing, and witness the spectacular sunset over golden sands.</p>
+    </div>
+  </section>
+  
+  <section class="story">
+    <div class="story-img"><img src="winter1.jpg" alt="Winter Wonderland"></div>
+    <div class="story-text">
+      <h3>Winter Wonderland</h3>
+      <p>Enjoy skiing, snowboarding, and cozy bonfires in the midst of snowy landscapes.</p>
+    </div>
+  </section>
+
+  <section class="story">
+    <div class="story-img"><img src="lakes1.jpg" alt="Lakeside Retreat"></div>
+    <div class="story-text">
+      <h3>Lakeside Retreat</h3>
+      <p>Relax by the calm waters, go boating, and enjoy fishing with beautiful mountain reflections.</p>
+    </div>
+  </section>
+
+  <section class="story">
+    <div class="story-img"><img src="cultural.jpg" alt="Cultural Town"></div>
+    <div class="story-text">
+      <h3>Cultural Town</h3>
+      <p>Immerse yourself in traditional dances, colorful festivals, and unique local markets.</p>
+    </div>
+  </section>
+
+  <section class="story">
+    <div class="story-img"><img src="island1.jpg" alt="Island Paradise"></div>
+    <div class="story-text">
+      <h3>Island Paradise</h3>
+      <p>Discover hidden islands, crystal-clear waters, and exotic tropical fruits.</p>
+    </div>
+  </section>
+
+  <section class="story">
+    <div class="story-img"><img src="historical.jpg" alt="Historical Ruins"></div>
+    <div class="story-text">
+      <h3>Historical Ruins</h3>
+      <p>Walk through ancient ruins, learn untold stories, and experience history coming alive.</p>
+    </div>
+  </section>
+
+  <section class="story">
+    <div class="story-img"><img src="village1.jpg" alt="Village Charm"></div>
+    <div class="story-text">
+      <h3>Village Charm</h3>
+      <p>Meet warm-hearted villagers, enjoy simple lifestyles, and walk through rice fields.</p>
+    </div>
+  </section>
+
+  <section class="story">
+    <div class="story-img"><img src="wildlife.jpg" alt="Wildlife Safari"></div>
+    <div class="story-text">
+      <h3>Wildlife Safari</h3>
+      <p>Get close to majestic animals, explore jungles, and capture the raw beauty of wildlife.</p>
+    </div>
+  </section>
+
+  <section class="story">
+    <div class="story-img"><img src="cliff.jpg" alt="Cliffside Views"></div>
+    <div class="story-text">
+      <h3>Cliffside Views</h3>
+      <p>Stand atop high cliffs, feel the wind, and gaze at the breathtaking ocean horizon.</p>
+    </div>
+  </section>
+
+  <section class="story">
+    <div class="story-img"><img src="roads.jpg" alt="Countryside Roads"></div>
+    <div class="story-text">
+      <h3>Countryside Roads</h3>
+      <p>Drive through peaceful farmlands, enjoy greenery, and discover hidden country paths.</p>
+    </div>
+  </section>
+  
+  <section class="story">
+    <div class="story-img"><img src="rainforest.jpg" alt="Rainforest Journey"></div>
+    <div class="story-text">
+      <h3>Rainforest Journey</h3>
+      <p>Explore dense rainforests, hear exotic bird calls, and uncover mysterious flora and fauna.</p>
+    </div>
+  </section>
+
+  <section class="story">
+    <div class="story-img"><img src="temple.jpg" alt="Temple Trails"></div>
+    <div class="story-text">
+      <h3>Temple Trails</h3>
+      <p>Visit sacred temples, learn cultural rituals, and admire ancient carvings.</p>
+    </div>
+  </section>
+
+  <section class="story">
+    <div class="story-img"><img src="river.jpeg" alt="River Cruise"></div>
+    <div class="story-text">
+      <h3>River Cruise</h3>
+      <p>Enjoy luxury river cruises, see scenic views, and relax with the gentle flow of waters.</p>
+    </div>
+  </section>
+  
+  <section class="story">
+    <div class="story-img"><img src="sunset.jpeg" alt="Sunset Point"></div>
+    <div class="story-text">
+      <h3>Sunset Point</h3>
+      <p>Capture the most stunning sunsets, golden skies, and peaceful evenings.</p>
+    </div>
+  </section>
+
+  <section class="story">
+    <div class="story-img"><img src="adventure.jpeg" alt="Adventure Park"></div>
+    <div class="story-text">
+      <h3>Adventure Park</h3>
+      <p>Feel the thrill of rides, zip lines, and adventurous sports in nature.</p>
+    </div>
+  </section>
+
+  <section class="story">
+    <div class="story-img"><img src="flower.jpg" alt="Flower Valley"></div>
+    <div class="story-text">
+      <h3>Flower Valley</h3>
+      <p>Walk across colorful flower fields, breathe fragrance, and feel fresh beauty everywhere.</p>
+    </div>
+  </section>
+</main>
+<footer>
+  @ 2025 Travel Journey
+</footer>
+</body>
+</html>

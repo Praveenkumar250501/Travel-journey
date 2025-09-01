@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Location</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #ffecd2, #fcb69f);
+      font-family: Arial, sans-serif;
+    }
+    iframe {
+      width: 90%;
+      max-width: 1200px;
+      height: 80vh;
+      border: none;
+      border-radius: 20px;        
+      box-shadow: 0px 8px 20px rgba(0,0,0,0.3); 
+      animation: fadeIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.6320245321285!2d79.43589717451977!3d10.991122855197911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a552d9058a6f22f%3A0xbd66d7e84aa851fe!2sEast%20Street%2C%20Thirubuvanam%2C%20Tamil%20Nadu%20612103!5e0!3m2!1sen!2sin!4v1756525518375!5m2!1sen!2sin"
+	width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</body>
+</html>
